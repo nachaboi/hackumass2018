@@ -56,7 +56,8 @@ header * {
     font-family: 'Roboto', sans-serif;
     text-indent: 2em;
     font-weight: 100;
-    margin: 20px;
+    border-style: solid;
+    margin: 50px;
     padding: 10px 20px;
 }
 
