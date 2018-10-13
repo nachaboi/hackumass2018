@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Title Here</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Add Header 1 here</h1>
+        </header>
+
+
+
+        <main>
+            <div class="nav">
+                <a href="./home.html">Home</a>
+                <a href="./page1.html">page1</a>
+                <a href="./page2.html">page2</a>
+                <a href="./page3.html">page3</a>
+            </div>
+            
+            <section id="page1">
+                <div class="title">
+                    <h2>College GPA Calculator</h2>
+                </div>
+                <div class="para">
+                    <p>Input your score in the given function and it wil calculate the how much percent 
+                        you need for your next exam in order to increase your grade by one!
+                    </p>
+                </div>
+            </section>
+
+            <section id="JavaScript Test">
+                <div class="a">
+                    <p id = "ctext">woohoo this should change</p>
+                    <button type="button" onclick="document.getElementById('ctext').innerHTML = 'BOOM'">Change the text!</button>
+                    <p id = "sumn3"></p>
+                    <p id = "otherline">The number is: 11</p>
+                    <script>
+                        var n1 = 5;
+                        var n2 = 6;
+                        var n3 = n1 + n2;
+                        var text = "The number is: "
+                        document.getElementById("sumn3").innerHTML = text + n3;
+                    </script>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                Created by Alex, Alina and Nathan
+            </div>
+        </footer>
+    </body>
+
+</html>
