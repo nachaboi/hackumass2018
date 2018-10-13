@@ -11,11 +11,6 @@ input {
 	padding: none;
 }
 
-h2 {
-  margin-top: -50px;
-  margin-bottom: 10px;
-}
-
 h4 {
 	margin-left: 20px;
 	padding: none;
@@ -24,12 +19,12 @@ h4 {
 
 p {
 	margin-left: 20px;
-	padding-bottom: 20px;
+	padding: none;
 }
 
 button {
 	margin-left: 20px;
-	padding: none;
+	padding: 20px;
 }
 
 .navbar {
@@ -122,8 +117,7 @@ form {
 }
 
 .button {
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 50px;
 }
 
 /*---Media Queries --*/
