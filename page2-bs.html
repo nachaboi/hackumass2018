@@ -81,7 +81,7 @@
         
                     <h2>See how stressed you are using this stress calculator!</h2>
 
-                    <h5> In the last month, how often have you been upset because of something that 
+                    <h5>In the last month, how often have you been upset because of something that 
                         happened unexpectedly?</h5>
                     <form>
                         <input type="radio" name="1" value="1-1"> Never
@@ -90,7 +90,7 @@
                         <input type="radio" name="1" value="1-4"> Fairly often
                         <input type="radio" name="1" value="1-5"> Very often
                     </form>
-                    <h5> In the last month, how often have you felt that you were unable to control the
+                    <h5>In the last month, how often have you felt that you were unable to control the
                         important things in your life?</h5>
                     <form>
                         <input type="radio" name="2" value="2-1"> Never
@@ -143,31 +143,31 @@
                         <input type="radio" name="7" value="7-5"> Very often
                     </form>
                     <h5>In the last month, how often have you felt that you were on top of things?</h5>
-                        <form>
-                            <input type="radio" name="8" value="8-1"> Never
-                            <input type="radio" name="8" value="8-2"> Almost never
-                            <input type="radio" name="8" value="8-3"> Sometimes
-                            <input type="radio" name="8" value="8-4"> Fairly often
-                            <input type="radio" name="8" value="8-5"> Very often
-                        </form>
+                    <form>
+                        <input type="radio" name="8" value="8-1"> Never
+                        <input type="radio" name="8" value="8-2"> Almost never
+                        <input type="radio" name="8" value="8-3"> Sometimes
+                        <input type="radio" name="8" value="8-4"> Fairly often
+                        <input type="radio" name="8" value="8-5"> Very often
+                    </form>
                     <h5>In the last month, how often have you been angered because of things that
                             happened that were outside of your control?</h5>
-                        <form>
-                            <input type="radio" name="9" value="9-1"> Never
-                            <input type="radio" name="9" value="9-2"> Almost never
-                            <input type="radio" name="9" value="9-3"> Sometimes
-                            <input type="radio" name="9" value="9-4"> Fairly often
-                            <input type="radio" name="9" value="9-5"> Very often
-                        </form>
+                    <form>
+                        <input type="radio" name="9" value="9-1"> Never
+                        <input type="radio" name="9" value="9-2"> Almost never
+                        <input type="radio" name="9" value="9-3"> Sometimes
+                        <input type="radio" name="9" value="9-4"> Fairly often
+                        <input type="radio" name="9" value="9-5"> Very often
+                    </form>
                     <h5>In the last month, how often have you felt difficulties were piling up so high that
                             you could not overcome them?</h5>
-                        <form>
-                            <input type="radio" name="10" value="10-1"> Never
-                            <input type="radio" name="10" value="10-2"> Almost never
-                            <input type="radio" name="10" value="10-3"> Sometimes
-                            <input type="radio" name="10" value="10-4"> Fairly often
-                            <input type="radio" name="10" value="10-5"> Very often
-                        </form>
+                    <form>
+                        <input type="radio" name="10" value="10-1"> Never
+                        <input type="radio" name="10" value="10-2"> Almost never
+                        <input type="radio" name="10" value="10-3"> Sometimes
+                        <input type="radio" name="10" value="10-4"> Fairly often
+                        <input type="radio" name="10" value="10-5"> Very often
+                    </form>
                     <br>
                     <button onclick="stressCalc()">Find out your stress level!</button>
                     <p id="x"></p>
@@ -233,30 +233,30 @@
         
         
                             if (d[0].checked) {
-                                var d = 0;
+                                var d = 4;
                             } else if (d[1].checked) {
-                                var d = 1;
+                                var d = 3;
                             } else if (d[2].checked) {
                                 var d = 2;
                             } else if (d[3].checked) {
-                                var d = 3;
+                                var d = 1;
                             } else if (d[4].checked) {
-                                var d = 4;
+                                var d = 0;
                             } else {
                                 counter = counter + 1;
                             }
         
         
                             if (e[0].checked) {
-                                var e = 0;
+                                var e = 4;
                             } else if (e[1].checked) {
-                                var e = 1;
+                                var e = 3;
                             } else if (e[2].checked) {
                                 var e = 2;
                             } else if (e[3].checked) {
-                                var e = 3;
+                                var e = 1;
                             } else if (e[4].checked) {
-                                var e = 4;
+                                var e = 0;
                             } else {
                                 counter = counter + 1;
                             }
@@ -273,32 +273,35 @@
                                 var f = 4;
                             } else {
                                 counter = counter + 1;
+                            }
 
                             if (g[0].checked) {
-                                var g = 0;
+                                var g = 4;
                             } else if (g[1].checked) {
-                                var g = 1;
+                                var g = 3;
                             } else if (g[2].checked) {
                                 var g = 2;
                             } else if (g[3].checked) {
-                                var g = 3;
+                                var g = 1;
                             } else if (g[4].checked) {
-                                var g = 4;
+                                var g = 1;
                             } else {
                                 counter = counter + 1;
+                            }
 
                             if (h[0].checked) {
-                                var h = 0;
+                                var h = 4;
                             } else if (h[1].checked) {
-                                var h = 1;
+                                var h = 3;
                             } else if (h[2].checked) {
                                 var h = 2;
                             } else if (h[3].checked) {
-                                var h = 3;
+                                var h = 1;
                             } else if (h[4].checked) {
-                                var h = 4;
+                                var h = 0;
                             } else {
                                 counter = counter + 1;
+                            }
 
                             if (i[0].checked) {
                                 var i = 0;
@@ -312,6 +315,7 @@
                                 var i = 4;
                             } else {
                                 counter = counter + 1;
+                            }
 
                             if (j[0].checked) {
                                 var j = 0;
@@ -325,17 +329,17 @@
                                 var j = 4;
                             } else {
                                 counter = counter + 1;
+                            }
         
                             if (counter > 0) {
-                                    alert("Please fill all the questions!");
+                                    alert("Please fill out all the blanks!");
                                     return;terminal
                                     
                                 }
         
         
-        
                             var total = a + b + c + d + e + f + g + h + i + j;
-                            var text = "Your stress level is ";
+                            var text = "Your perceives stress scale (PSS) is ";
                             document.getElementById("x").innerHTML = text + total;
                             }
                             
