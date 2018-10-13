@@ -35,7 +35,7 @@ header {
 }
 
 .nav a:hover {
-    background-color: rgb(106, 190, 223)
+    background-color: rgb(106, 190, 223);
 }
 
 .nav a.active {
@@ -80,5 +80,8 @@ header {
     font-size: 150%;
     border-width: 2px;
     margin: 10px;
+}
 
+.homepage {
+    color: #aec6cf;
 }
