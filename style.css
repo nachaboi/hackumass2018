@@ -29,7 +29,6 @@ header {
 .nav a{
     float: left;
     display: block;
-    height: 20%;
     color: white;
     text-align: center;
     padding: 15px 80px;
@@ -84,5 +83,6 @@ header {
 }
 
 .homepage {
-    background-color: #ffd1dc;
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
 }
