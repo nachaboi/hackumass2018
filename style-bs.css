@@ -48,10 +48,10 @@ html, body {
 	background-color: #555;
 	color: white;
 	font-size: 16px;
-	padding: 12px 24px;
+	padding: 2px 4px;
 	border: none;
 	cursor: pointer;
-	border-radius: 2px;
+	border-radius: 1px;
 }
 
 .container .btn:hover {
