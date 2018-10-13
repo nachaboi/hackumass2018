@@ -36,6 +36,11 @@ table, th, td {
 	border: 1px solid black;
 }
 
+th, td {
+	position: relative;
+	padding: 1em;
+}
+
 .navbar {
   padding: 8px;
 }
