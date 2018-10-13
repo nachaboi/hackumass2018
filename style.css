@@ -29,6 +29,7 @@ header {
 .nav a{
     float: left;
     display: block;
+    position: relative;
     color: white;
     text-align: center;
     padding: 15px 80px;
@@ -64,6 +65,7 @@ header {
 
 .footer {
     background: black;
+    position: relative;
     height: 30px;
     padding-bottom: 20px;
 }
