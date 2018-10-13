@@ -27,19 +27,22 @@ function gradeCalc(){
          }
     }
 
+    var validcounter = 0;
+
     var grayeds = document.getElementsByName("grayed");
     var percys = document.getElementsByName("percy");
 
-    
-
-
+    for(i = 0; i < grayeds.length; i++) {
+        if(grayeds[i].value == 0 || percys[i].value == 0) {
+            validcounter++;
+        }
+    }
 
     document.getElementById("get90").innerHTML = "";
     document.getElementById("theClass").innerHTML = "";
     document.getElementById("currentGrade").innerHTML = "";
 
-
-    if(validcounter > 0) {
+    if(validcounter > 0 || finalex > 100) {
         alert("Please Input Valid Values");
         return;
     }
@@ -55,7 +58,7 @@ function gradeCalc(){
     var weights = (p1)+(p2); 
     finalGrade = (finalGrade/weights)*100;
     document.getElementById("currentGrade").innerHTML = "Your final current grade is: " + finalGrade;
-    if(finalex > 0 && finalex <=100) {
+    if(finalex > 0) {
         var existingScores = (g1*p1*.01) + (g2*p2*.01);
         var totalPercent = (p1+p2+finalex);
         var toget93 = ((93/100) * totalPercent) - existingScores;
