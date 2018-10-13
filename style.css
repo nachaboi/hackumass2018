@@ -16,17 +16,7 @@ header {
 
 }
 
-header * {
-    text-align: center;
-    padding: 30px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    background:
-    url(sunrisephoto.jpg) no-repeat center;
-    height: 250px;
-    color: white;
-}
+
 
 .nav {
     overflow: hidden;
