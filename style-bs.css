@@ -16,6 +16,7 @@ h4 {
 	padding: none;
 }
 
+
 p {
 	margin-left: 20px;
 	padding: none;
@@ -106,7 +107,8 @@ form {
 }
 
 .para_stress {
-  padding-left: 4rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .button {
