@@ -32,6 +32,11 @@ button {
 	padding: none;
 }
 
+table {
+	border-width: 1em;
+	border-color: black;
+}
+
 .navbar {
   padding: 8px;
 }
