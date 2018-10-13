@@ -32,9 +32,8 @@ button {
 	padding: none;
 }
 
-table {
-	border-width: 1em;
-	border-color: black;
+table, th, td {
+	border: 1px solid black;
 }
 
 .navbar {
