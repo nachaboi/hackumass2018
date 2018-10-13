@@ -7,6 +7,7 @@ header {
     text-align: center;
     background-color: #f1f3f1;
     padding: 30px;
+    font-family: 'Palatino';
     
 }
 
@@ -18,6 +19,7 @@ header * {
 .nav {
     overflow: hidden;
     background-color: rgb(228, 190, 190);
+    font-family: 'Palatino';
 }
 
 .nav a{
@@ -35,4 +37,20 @@ header * {
 .nav a.active {
     background-color: #4caf50;
     color: white;
+}
+
+.title {
+    font-family: 'Palatino';
+    text-align: center;
+}
+
+.para {
+    font-family: 'Palatino';
+    padding; 10px 20px;
+}
+
+.footer {
+    font-family: 'Palatino';
+    padding: 10px 20px;
+    font-size: 8px
 }
