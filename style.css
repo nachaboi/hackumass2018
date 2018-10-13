@@ -73,5 +73,10 @@ header {
     font-size: 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+}
 
+.video {
+    text-align: center;
+    border-width: 2px;
+    margin: 100px;
 }
