@@ -16,6 +16,11 @@ h4 {
 	padding: none;
 }
 
+p {
+	margin-left: 20px;
+	padding: none;
+}
+
 .navbar {
   padding: 8px;
 }
