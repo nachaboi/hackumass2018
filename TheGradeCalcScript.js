@@ -29,14 +29,18 @@ function gradeCalc(){
 
     var validcounter = 0;
 
+    //copies values in fields: grades and percentages
     var grayeds = document.getElementsByName("grayed");
     var percys = document.getElementsByName("percy");
 
+    //makes sure there are valid numbers in the fields
     for(i = 0; i < grayeds.length; i++) {
-        if(grayeds[i].value == 0 || percys[i].value == 0) {
+        if(grayeds[i].value <= 0 || percys[i].value <= 0 || percys[i].value > 100) {
             validcounter++;
         }
     }
+
+    
 
     document.getElementById("get90").innerHTML = "";
     document.getElementById("theClass").innerHTML = "";
