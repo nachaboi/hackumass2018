@@ -42,7 +42,11 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     -ms-transform:
+=======
+    -ms-transform;
+>>>>>>> e88a58cef80ad3733de5db771df21c0105cbadd2
     translate(-50%, -50%);
     text-align: center;
 }
