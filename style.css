@@ -4,12 +4,14 @@ body {
 }
 
 header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    line-height: 50px;
-    background-color: #eee;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 30px;
+    
 }
+
+header * {
+    display: inline;
+    height: 10px;
+}
+
