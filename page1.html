@@ -49,7 +49,7 @@
                     <br>
                     <br>
                     <button onclick="gradeCalc()">Calculate!</button>
-                    <p id="validness"></p>
+                    <p id="validness"></p> <!--not nessisary -->
                     <p id="theClass"></p>
                     <p id="currentGrade"></p>
         
@@ -82,13 +82,13 @@
                                      validcounter++;
                                  }
                              }
-                            document.getElementById("validness").innerHTML = "";
+                            //document.getElementById("validness").innerHTML = "";
                             document.getElementById("theClass").innerHTML = "";
                             document.getElementById("currentGrade").innerHTML = "";
 
 
                             if(validcounter > 0) {
-                                document.getElementById("validness").innerHTML = "Please Input Valid Values";
+                                alert("Please Input Valid Values");
                                 return;
                             }
 
