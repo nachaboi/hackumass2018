@@ -86,6 +86,5 @@ header {
 
 .homepage {
     background-image: url("https://i.ytimg.com/vi/PLAJTuLNI7A/maxresdefault.jpg");
-    opacity: 0.30;
-    background-repeat: repeat-x;
+    opacity: 0.50;
 }
