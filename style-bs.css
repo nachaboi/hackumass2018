@@ -114,6 +114,8 @@ form {
 .para_stress {
   padding-left: 6rem;
   padding-right: 6rem;
+  padding-top: -80px;
+  padding-bottom: 40px;
 }
 
 .button {
@@ -176,8 +178,13 @@ figure {
 }
 
 /* -- Background Image -- */
-header {
+.header0 {
   background:url(sunrisephoto.jpg) no-repeat center;
+  height: 500px;
+}
+
+.header3 {
+  background:url(study.jpg) no-repeat center;
   height: 500px;
 }
 
