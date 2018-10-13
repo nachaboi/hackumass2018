@@ -6,6 +6,16 @@ html, body {
   color: #222;
 }
 
+input {
+	margin: 20px;
+	padding: none;
+}
+
+h4 {
+	margin: 20px;
+	padding: none;
+}
+
 .navbar {
   padding: 8px;
 }
