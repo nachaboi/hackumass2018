@@ -47,15 +47,20 @@
                     <p>Grade 2 Percent:</p>
                     <input id="p2" value="">
                     <br>
+                    <button onclick="gradeCalc()">Calculate!</button>
                     <p id="theClass"></p>
                     <p id="currentGrade"></p>
         
-        
-        
-        
-                    <button onclick="gradeCalc()">Calculate!</button>
+                    <div style="block" id="texttoshow">
+                        <button onclick="reload()" id="reloadButton">test</button>
+                    </div>
+                    
+
 
                     <script>
+                        function reload(){
+                            location.reload();
+                        }
                         function gradeCalc(){
                             var className = document.getElementById("className").value;
                             document.getElementById("theClass").innerHTML = className;
@@ -69,6 +74,9 @@
                             var n3 = n1 + n2;
                             var text = "The number is: "
                             document.getElementById("sumn3").innerHTML = text + n3;
+                            var test = document.getElementById("reloadButton");
+                            test.value = "Try another class!";
+                            document.getElementById("texttoshow").style.display = "inline";
                         }
                     </script>
                 </div>
