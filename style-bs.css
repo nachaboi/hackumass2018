@@ -71,9 +71,9 @@ html, body {
 
 .text {
     background-color: pink;
-    color: white;
+    color: black;
     font-size: 16px;
-    padding: 16px 32 px;
+    padding: 16px 32px;
 }
 
 footer {
