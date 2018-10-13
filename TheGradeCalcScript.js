@@ -2,6 +2,13 @@ function reload(){
     location.reload();
 }
 function gradeCalc(){
+
+    //ideas for dealing with multiple classes
+
+    //have users input it like 100 20 30 20
+    //so that we can index through that string
+
+
     //obtaining information
     var className = document.getElementById("className").value; 
     var values = [];
@@ -10,6 +17,8 @@ function gradeCalc(){
     var p1 = document.getElementById("p1").value * 1;
     var p2 = document.getElementById("p2").value * 1;
     var finalex = document.getElementById("finalex").value * 1;
+
+    //checks to see if fields are 0 or over 100
     values.push(g1);
     values.push(g2);
     values.push(p1);
@@ -21,16 +30,18 @@ function gradeCalc(){
              validcounter++;
          }
      }
-    document.getElementById("get90").innerHTML = "";
-    document.getElementById("theClass").innerHTML = "";
-    document.getElementById("currentGrade").innerHTML = "";
 
-
-    if(validcounter > 0) {
+     if(validcounter > 0) {
         alert("Please Input Valid Values");
         return;
     }
 
+    //resets output
+    document.getElementById("get90").innerHTML = "";
+    document.getElementById("theClass").innerHTML = "";
+    document.getElementById("currentGrade").innerHTML = "";
+
+    //checks if class was given or not and prints based on that
     if(className == "") {
         document.getElementById("theClass").innerHTML = "Information about your unspecified class:"
     }
@@ -38,6 +49,8 @@ function gradeCalc(){
         document.getElementById("theClass").innerHTML = "Information about your class, " + className + ":";
     }
     
+
+    //calculations 
     var finalGrade = ((g1*p1*.01) + (g2*p2*.01));
     var weights = (p1)+(p2); 
     finalGrade = (finalGrade/weights)*100;
@@ -59,9 +72,7 @@ function gradeCalc(){
         toget80 = (toget80/(.01*finalex));
         document.getElementById("get80").innerHTML = "You need to get a " + toget80 + " to get a 80";
     }
-    
 
-    //var test = document.getElementById("reloadButton");
-    //test.value = "Try another class!";
+    //shows the button
     document.getElementById("texttoshow").style.display = "inline";
 }
