@@ -103,7 +103,9 @@
                                 document.getElementById("theClass").innerHTML = "Information about your class, " + className + ":";
                             }
                             
-                            var finalGrade = (((g1*p1*.01) + (g2*p2*.01))/((p1+p2)))*100;
+                            var finalGrade = ((g1*p1*.01) + (g2*p2*.01));
+                            var weights = (p1*1)+(p2*1); //ones added because it thought they were strings, not values
+                            finalGrade = (finalGrade/weights)*100;
                             document.getElementById("currentGrade").innerHTML = "Your final grade is: " + finalGrade;
 
                             var toget90 = 90 - ((g1*p1*.01) + (g2*p2*.01)) + 0.0;
