@@ -29,6 +29,7 @@ header {
 .nav a{
     float: left;
     display: block;
+    height: 20%;
     color: white;
     text-align: center;
     padding: 15px 80px;
