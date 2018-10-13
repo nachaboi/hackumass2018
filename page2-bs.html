@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coll[a]ge</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style-bs.css" rel="stylesheet">
+</head>
+<body>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coll[a]ge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home-bs.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page1-bs.html">GPA Calculator</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./page2-bs.html">Stress Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page 3</a>
+                    </li>    
+
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!--- Image-->
+       
+        <header>
+
+        </header>
+            
+        <!--- Welcome Section -->
+
+        <div class="container-fluid padding">
+            <div class="row welcome text-center padding">
+                <div class="col-12">
+                    <h1 class="display-4">Stress Calculator</h1>
+                </div>   
+                <p class="lead"> The Stress Calculator implemented in this website for which we have created will help you to realize 
+                    your stress levels. Make sure you are not too stressed or else it will impact you in the long term.
+                    Your mental health matters part of your college life! Exercise! </p>
+            </div>
+            <hr class="light">
+            </div>
+        
+        <!--- Two Column Section -->
+        <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-12">
+                <h2>How to use the Stress Calculator</h2>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    <hr class="light">
+            </div>   
+        </div>
+        </div>
+
+        <section id="Stress Level Test">
+                <div class="para">
+        
+                    <h2>See how stressed you are using this stress calculator!</h2>
+                    <h3>In the past week, how often have you been upset because of unexpected events?</h3>
+                    <form>
+                        <li><input type="radio" name="1" value="1-1"> Never</li>
+                        <li><input type="radio" name="1" value="1-2"> Almost Never</li>
+                        <li><input type="radio" name="1" value="1-3"> Fairly Often</li>
+                        <li><input type="radio" name="1" value="1-4"> Very Often</li>
+                    </form>
+                    <h3>In the past week, how often have you felt that you were unable to control things you wanted to be?</h3>
+                    <form>
+                        <li><input type="radio" name="2" value="2-1"> Never</li>
+                        <li><input type="radio" name="2" value="2-2"> Almost Never</li>
+                        <li><input type="radio" name="2" value="2-3"> Fairly Often</li>
+                        <li><input type="radio" name="2" value="2-4"> Very Often</li>
+                    </form>
+                    <h3>In the past week, have you felt that you have been swamped by your responsibilities?</h3>
+                    <form>
+                        <li><input type="radio" name="3" value="3-1"> Never</li>
+                        <li><input type="radio" name="3" value="3-2"> Almost Never</li>
+                        <li><input type="radio" name="3" value="3-3"> Fairly Often</li>
+                        <li><input type="radio" name="3" value="3-4"> Very Often</li>
+                    </form>
+                    <h3>In the past week, have you felt like just giving up?</h3>
+                    <form>
+                        <li><input type="radio" name="4" value="4-1"> Never</li>
+                        <li><input type="radio" name="4" value="4-2"> Almost Never</li>
+                        <li><input type="radio" name="4" value="4-3"> Fairly Often</li>
+                        <li><input type="radio" name="4" value="4-4"> Very Often</li>
+                    </form>
+                    <h3>In the past week, have you felt that you were on top of everything?</h3>
+                    <form>
+                        <li><input type="radio" name="5" value="5-1"> Never</li>
+                        <li><input type="radio" name="5" value="5-2"> Almost Never</li>
+                        <li><input type="radio" name="5" value="5-3"> Fairly Often</li>
+                        <li><input type="radio" name="5" value="5-4"> Very Often</li>
+                    </form>
+                    <br>
+                    <button onclick="stressCalc()">Find out your stress level!</button>
+                    <p id="x"></p>
+                    <p id="y"></p>
+        
+                    <script>
+                        function stressCalc(){
+                            var a = document.getElementsByName("1");
+                            var b = document.getElementsByName("2");
+                            var c = document.getElementsByName("3");
+                            var d = document.getElementsByName("4");
+                            var e = document.getElementsByName("5");
+                            var counter = 0;
+        
+        
+                            if (a[0].checked) {
+                                var a = 0;
+                            } else if (a[1].checked) {
+                                var a = 5;
+                            } else if (a[2].checked) {
+                                var a = 7;
+                            } else if (a[3].checked) {
+                                var a = 10;
+                            } else {
+                                counter = counter + 1;
+                            }
+                            
+        
+                            if (b[0].checked) {
+                                var b = 0;
+                            } else if (b[1].checked) {
+                                var b = 3;
+                            } else if (b[2].checked) {
+                                var b = 6;
+                            } else if (b[3].checked) {
+                                var b = 9;
+                            } else {
+                                counter = counter + 1;
+                            }
+        
+                            if (c[0].checked) {
+                                var c = 0;
+                            } else if (c[1].checked) {
+                                var c = 2;
+                            } else if (c[2].checked) {
+                                var c = 4;
+                            } else if (c[3].checked) {
+                                var c = 6;
+                            } else {
+                                counter = counter + 1;
+                            }
+        
+        
+                            if (d[0].checked) {
+                                var d = 0;
+                            } else if (d[1].checked) {
+                                var d = 2;
+                            } else if (d[2].checked) {
+                                var d = 3;
+                            } else if (d[3].checked) {
+                                var d = 4;
+                            } else {
+                                counter = counter + 1;
+                            }
+        
+        
+                            if (e[0].checked) {
+                                var e = 0;
+                            } else if (e[1].checked) {
+                                var e = 1;
+                            } else if (e[2].checked) {
+                                var e = 2;
+                            } else if (e[3].checked) {
+                                var e = 3;
+                            } else {
+                                counter = counter + 1;
+                                
+                            }
+        
+                            if (counter > 0) {
+                                    alert("Please fill all the questions!");
+                                    return;terminal
+                                    
+                                }
+        
+        
+        
+                            var total = a + b + c + d + e;
+                            var text = "Your stress level is ";
+                            document.getElementById("x").innerHTML = text + total;
+                            }
+                            
+        
+                    </script>
+                </div>
+            </section>
+
+        <!--- Fixed background -->
+        <figure>
+            <div class="fixed-wrap">
+                <div id="fixed">
+                </div>
+            </div>
+        </figure>
+        
+
+        <!--- Footer -->
+        <footer>
+            <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <hr class="light">
+                    <h6>&copy; Created by Alina, Jin Young (Alex) and Nathan</h6>
+                    <hr class="light">
+                </div>
+            </div>
+            </div>
+        </footer>
+
+</body>
+</html>
+
+
+    </body>
+
+</html>
+
