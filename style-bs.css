@@ -65,13 +65,6 @@ html, body {
     opacity: 1;
 }
 
-.middle:hover .text1 {
-    background-color: pink;
-    color: black;
-    font-size: 16px;
-    padding: 10px 20px;
-}
-
 
 
 footer {
