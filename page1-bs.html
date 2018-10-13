@@ -11,7 +11,6 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style-bs.css" rel="stylesheet">
 </head>
-<body>
 
     <body>
         <!-- Navigation -->
@@ -93,6 +92,7 @@
                 <br>
                 <br>
                 <button onclick="gradeCalc()">Calculate!</button>
+                
                 <p id="theClass"></p>
                 <p id="currentGrade"></p>
                 <p id="get93"></p>
@@ -107,6 +107,19 @@
                 <p id="get63"></p>
                 <p id="get60"></p>
 
+                    
+                <body>
+
+                    <button onclick="myFunction()">Try it</button>
+
+                    <script>
+                        function myFunction() {
+                        var x = document.createElement("BUTTON");
+                        x.setAttribute("name", "text");
+                        document.body.appendChild(x);
+                        }
+                    </script>
+                </body>    
     
                 <div style="display:none" id="texttoshow">
                     <button onclick="reload()" id="reloadButton">Try another class!</button>
@@ -137,9 +150,4 @@
         </footer>
 
 </body>
-</html>
-
-
-    </body>
-
 </html>

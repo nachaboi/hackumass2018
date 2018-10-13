@@ -1,6 +1,11 @@
 function reload(){
     location.reload();
 }
+function newField(){
+    var x = document.createElement("paragraph");
+    x.setAttribute("value", "hi");
+    document.body.appendChild(x);
+}
 function gradeCalc(){
 
     var grades = [93, 90, 87, 83, 80, 77, 73, 70, 67, 63, 60];
