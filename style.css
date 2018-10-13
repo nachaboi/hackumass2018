@@ -1,7 +1,7 @@
 body {
     margin: 0;
     margin-top: 0px;
-    background-image: url("https://i.ytimg.com/vi/PLAJTuLNI7A/maxresdefault.jpg");
+    background-image: url("https://i.ytimg.com/vi/PLAJTuLNI7A/maxresdefault.jpg") no-repeat center;
     opacity: 0.50;
 }
 
