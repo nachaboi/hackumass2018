@@ -22,6 +22,11 @@ p {
 	padding: none;
 }
 
+button {
+	margin-left: 20px;
+	padding: none;
+}
+
 .navbar {
   padding: 8px;
 }
