@@ -21,7 +21,7 @@ header {
 }
 
 .container {
-    position: relative;
+    position: center;
     width: 50%;
 }
 
@@ -55,7 +55,7 @@ header {
 }
 
 .text {
-    background-color: #4caf50;
+    background-color: #77dd77;
     color: white;
     font-size: 16px;
     padding: 16px 32 px;
