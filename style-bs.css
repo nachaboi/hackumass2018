@@ -8,11 +8,12 @@ html, body {
 
 input {
 	margin: 20px;
+	padding: none;
 }
 
 h4 {
 	margin: 20px;
-	padding-bottom: none;
+	padding: none;
 }
 
 .navbar {
