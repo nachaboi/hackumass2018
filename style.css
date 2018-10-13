@@ -51,5 +51,6 @@ header * {
 
 .footer {
     font-family: 'Palatino';
-    font-size: 8px
+    font-size: 8px;
+    padding: 10px;
 }
