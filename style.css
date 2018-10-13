@@ -57,7 +57,11 @@ header * {
     text-indent: 2em;
     font-weight: 100;
     border-style: solid;
-    margin: 50px;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+    margin: 100px;
     padding: 10px 20px;
 }
 
