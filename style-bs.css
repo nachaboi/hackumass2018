@@ -69,8 +69,15 @@ html, body {
     opacity: 1;
 }
 
-.text {
+.middle:hover .text1 {
     background-color: pink;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.middle:hover .text2 {
+	background-color: pink;
     color: black;
     font-size: 16px;
     padding: 10px 20px;
