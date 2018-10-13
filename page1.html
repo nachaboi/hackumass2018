@@ -108,11 +108,13 @@
                             var finalGrade = ((g1*p1*.01) + (g2*p2*.01));
                             var weights = (p1*1)+(p2*1); //ones added because it thought they were strings, not values
                             finalGrade = (finalGrade/weights)*100;
-                            document.getElementById("currentGrade").innerHTML = "Your final grade is: " + finalGrade;
-
-                            var toget90 = 90 - ((g1*p1*.01) + (g2*p2*.01)) + 0.0;
-                            toget90 = (toget90/finalex)*100;
-                            document.getElementById("get90").innerHTML = "You need to get a " + toget90 + " to get a 90";
+                            document.getElementById("currentGrade").innerHTML = "Your final current grade is: " + finalGrade;
+                            if(finalex > 0 && finalex <=100) {
+                                var toget90 = 90 - ((g1*p1*.01) + (g2*p2*.01)) + 0.0;
+                                toget90 = (toget90/finalex)*100;
+                                document.getElementById("get90").innerHTML = "You need to get a " + toget90 + " to get a 90";
+                            }
+                            
 
                             //var test = document.getElementById("reloadButton");
                             //test.value = "Try another class!";
