@@ -69,7 +69,7 @@ header {
 }
 
 .footer p {
-    color: white;
+    color: black;
     font-size: 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -83,5 +83,5 @@ header {
 }
 
 .homepage {
-    background-color: #aec6cf;
+    background-color: #4caf50;
 }
