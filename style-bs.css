@@ -11,6 +11,11 @@ input {
 	padding: none;
 }
 
+h2 {
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
 h4 {
 	margin-left: 20px;
 	padding: none;
@@ -107,7 +112,8 @@ form {
 }
 
 .button {
-  padding-left: 50px;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 /*---Media Queries --*/
