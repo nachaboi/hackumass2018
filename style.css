@@ -27,8 +27,9 @@ header {
 }
 
 .nav a{
-    float: center;
+    float: left;
     display: block;
+    position: relative;
     color: white;
     text-align: center;
     padding: 15px 80px;
@@ -64,6 +65,7 @@ header {
 
 .footer {
     background: black;
+    position: relative;
     height: 30px;
     padding-bottom: 20px;
 }
@@ -83,5 +85,7 @@ header {
 }
 
 .homepage {
-    background-color: #ffd1dc;
+    background-image: url("https://i.ytimg.com/vi/PLAJTuLNI7A/maxresdefault.jpg");
+    opacity: 0.30;
+    background-repeat: repeat-x;
 }
