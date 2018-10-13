@@ -64,6 +64,11 @@ figure {
     padding: 1rem;
 }
 
+/* -- Background Image -- */
+header {
+  background:url(sunrisephoto.jpg) no-repeat center;
+  height: 500px;
+}
 
 
 
