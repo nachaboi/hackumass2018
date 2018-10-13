@@ -90,12 +90,21 @@ footer {
   height: 7%
 }
 
+form {
+  padding-left: 2rem;
+}
+
 /*--- Stress Calculator ---*/
-.para .form {
-  width: 75%;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+.a {
+  font-size: 20px;
+}
+
+.para_stress {
+  padding-left: 4rem;
+}
+
+.button {
+  padding-left: 50px;
 }
 
 /*---Media Queries --*/
