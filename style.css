@@ -28,7 +28,7 @@ header {
 .image {
     opacity: 1;
     display: block;
-    width: all;
+    width: 200%;
     height: auto;
     position: center;
     transition: .5s ease;
