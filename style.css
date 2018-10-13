@@ -51,6 +51,7 @@ header * {
     font-weight: 100;
     text-align: center;
     border-width: 5px;
+    margin-top: 20px;
 }
 
 .para {
