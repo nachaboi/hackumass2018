@@ -16,10 +16,7 @@ header {
 
 }
 
-header * {
-    display: inline;
-    height: 10px;
-}
+
 
 .nav {
     overflow: hidden;
