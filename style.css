@@ -16,10 +16,7 @@ header {
 
 }
 
-header * {
-    display: inline;
-    height: 10px;
-}
+
 
 .nav {
     overflow: hidden;
@@ -51,7 +48,7 @@ header * {
     font-weight: 100;
     text-align: center;
     border-width: 5px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .para {
@@ -62,7 +59,7 @@ header * {
     border-width: 2px;
     border-color: black;
     margin: 100px;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 .footer {
