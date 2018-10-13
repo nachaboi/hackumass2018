@@ -179,13 +179,23 @@ figure {
 
 /* -- Background Image -- */
 .header0 {
-  background:url(sunrisephoto.jpg) no-repeat center;
-  height: 500px;
+  background:url(photo0.jpeg) no-repeat center;
+  height: 450px;
+}
+
+.header1 {
+  background:url(photo1.jpeg) no-repeat center;
+  height: 450px;
+}
+
+.header2 {
+  background:url(photo2.jpg) no-repeat center;
+  height: 450px;
 }
 
 .header3 {
-  background:url(study.jpg) no-repeat center;
-  height: 500px;
+  background:url(photo3.jpg) no-repeat center;
+  height: 450px;
 }
 
 
