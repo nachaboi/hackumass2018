@@ -34,16 +34,42 @@
 
             <section id="JavaScript Test">
                 <div class="para">
-                    //<p id = "ctext">woohoo this should change</p>
-                    //<button type="button" onclick="document.getElementById('ctext').innerHTML = 'BOOM'">Change the text!</button>
-                    <p id = "sumn3"></p>
-                    <p id = "otherline">The number is: 11</p>
+
+
+                    <p>Class Name:</p>
+                    <input type="text" id="className" value="">
+                    <p>Grade Type 1:</p>
+                    <input id="g1" value="">
+                    <p>Grade Type 2:</p>
+                    <input id="g2" value="">
+                    <p>Grade 1 Percent:</p>
+                    <input  id="p1" value="">
+                    <p>Grade 2 Percent:</p>
+                    <input id="p2" value="">
+                    <br>
+                    <p id="theClass"></p>
+                    <p id="currentGrade"></p>
+        
+        
+        
+        
+                    <button onclick="gradeCalc()">Calculate!</button>
+
                     <script>
-                        var n1 = 5;
-                        var n2 = 6;
-                        var n3 = n1 + n2;
-                        var text = "The number is: "
-                        document.getElementById("sumn3").innerHTML = text + n3;
+                        function gradeCalc(){
+                            var className = document.getElementById("className").value;
+                            document.getElementById("theClass").innerHTML = className;
+                            var g1 = document.getElementById("g1").value;
+                            var g2 = document.getElementById("g2").value;
+                            var p1 = document.getElementById("p1").value;
+                            var p2 = document.getElementById("p2").value;
+                            var finalGrade = (g1*p1) + (g2*p2);
+                            document.getElementById("currentGrade").innerHTML = "Your final grade is: " + finalGrade;
+
+                            var n3 = n1 + n2;
+                            var text = "The number is: "
+                            document.getElementById("sumn3").innerHTML = text + n3;
+                        }
                     </script>
                 </div>
             </section>
