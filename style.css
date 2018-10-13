@@ -50,6 +50,7 @@ header * {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 100;
     text-align: center;
+    border-width: 5px;
 }
 
 .para {
@@ -57,8 +58,8 @@ header * {
     text-indent: 2em;
     font-weight: 100;
     border-style: solid;
-    border-width: 3px;
-    border-color: red;
+    border-width: 2px;
+    border-color: black;
     margin: 100px;
     padding: 10px 20px;
 }
