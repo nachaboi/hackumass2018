@@ -3,10 +3,12 @@
 html, body {
   height: 100%;
   width: 100%;
-  color #222
+  color: #222;
 }
 
-
+.navbar {
+  padding: 8px
+}
 
 
 
@@ -84,6 +86,13 @@ header {
   padding: 1px 15px;
 }
 
+.lead {
+  text-align: center;
+}
+
+.footer {
+  font-size: 8px;
+}
 
 
 
