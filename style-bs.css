@@ -61,7 +61,9 @@ html, body {
     opacity: 0.3;
 }
 
-
+.container:hover .middle {
+    opacity: 1;
+}
 
 .middle:hover .text {
     background-color: pink;
