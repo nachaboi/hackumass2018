@@ -30,6 +30,34 @@ html, body {
   padding-bottom: 2rem;
 }
 
+.container {
+	position: relative;
+	width: 50%;
+}
+
+.container img {
+	width: 100%;
+	height: auto;
+}
+
+.container .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate (-50%, -50%);
+	background-color: #555;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px
+}
+
+.container .btn:hover {
+	background-color: black;
+}
+
 footer {
   background-color: #3f3f3f;
   color: #d5d5d5;
