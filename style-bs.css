@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-
+html, body {
+  height: 100%;
+  width: 100%;
+  color #222
+}
 
 
 
@@ -46,7 +50,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url(sunrisephoto.jpg);
   position: fixed;
   display: block;
   top: 0;
@@ -79,6 +83,8 @@ header {
 .card-text {
   padding: 1px 15px;
 }
+
+
 
 
 /*
