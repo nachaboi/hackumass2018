@@ -70,7 +70,15 @@ header {
   height: 500px;
 }
 
+/*-- Footer -- */
+.card-title {
+  text-align: center;
+  padding: 10px;
+}
 
+.card-text {
+  padding: 1px 15px;
+}
 
 
 /*
