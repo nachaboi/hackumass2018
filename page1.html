@@ -55,7 +55,11 @@
                     <button onclick="gradeCalc()">Calculate!</button>
                     <p id="theClass"></p>
                     <p id="currentGrade"></p>
+                    <p id="get93"></p>
                     <p id="get90"></p>
+                    <p id="get87"></p>
+                    <p id="get83"></p>
+                    <p id="get80"></p>
 
         
                     <div style="display:none" id="texttoshow">
@@ -72,11 +76,11 @@
                             //obtaining information
                             var className = document.getElementById("className").value; 
                             var values = [];
-                            var g1 = document.getElementById("g1").value;
-                            var g2 = document.getElementById("g2").value;
-                            var p1 = document.getElementById("p1").value;
-                            var p2 = document.getElementById("p2").value;
-                            var finalex = document.getElementById("finalex").value;
+                            var g1 = document.getElementById("g1").value * 1;
+                            var g2 = document.getElementById("g2").value * 1;
+                            var p1 = document.getElementById("p1").value * 1;
+                            var p2 = document.getElementById("p2").value * 1;
+                            var finalex = document.getElementById("finalex").value * 1;
                             values.push(g1);
                             values.push(g2);
                             values.push(p1);
@@ -106,13 +110,25 @@
                             }
                             
                             var finalGrade = ((g1*p1*.01) + (g2*p2*.01));
-                            var weights = (p1*1)+(p2*1); //ones added because it thought they were strings, not values
+                            var weights = (p1)+(p2); 
                             finalGrade = (finalGrade/weights)*100;
                             document.getElementById("currentGrade").innerHTML = "Your final current grade is: " + finalGrade;
                             if(finalex > 0 && finalex <=100) {
-                                var toget90 = 90 - ((g1*p1*.01) + (g2*p2*.01)) + 0.0;
-                                toget90 = (toget90/finalex)*100;
+                                var toget93 = ((93/100) * (p1+p2+finalex)) - (g1*p1*.01) - (g2*p2*.01);
+                                toget93 = (toget93/(.01*finalex));
+                                document.getElementById("get93").innerHTML = "You need to get a " + toget93 + " to get a 93";
+                                var toget90 = ((90/100) * (p1+p2+finalex)) - (g1*p1*.01) - (g2*p2*.01);
+                                toget90 = (toget90/(.01*finalex));
                                 document.getElementById("get90").innerHTML = "You need to get a " + toget90 + " to get a 90";
+                                var toget87 = ((87/100) * (p1+p2+finalex)) - (g1*p1*.01) - (g2*p2*.01);
+                                toget87 = (toget87/(.01*finalex));
+                                document.getElementById("get87").innerHTML = "You need to get a " + toget87 + " to get a 87";
+                                var toget83 = ((83/100) * (p1+p2+finalex)) - (g1*p1*.01) - (g2*p2*.01);
+                                toget83 = (toget83/(.01*finalex));
+                                document.getElementById("get83").innerHTML = "You need to get a " + toget83 + " to get a 83";
+                                var toget80 = ((80/100) * (p1+p2+finalex)) - (g1*p1*.01) - (g2*p2*.01);
+                                toget80 = (toget80/(.01*finalex));
+                                document.getElementById("get80").innerHTML = "You need to get a " + toget80 + " to get a 80";
                             }
                             
 
