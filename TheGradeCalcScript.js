@@ -7,6 +7,8 @@ function gradeCalc(){
 
     //obtaining information
     var className = document.getElementById("className").value; 
+    
+    //remove later
     var values = [];
     var g1 = document.getElementById("g1").value * 1;
     var g2 = document.getElementById("g2").value * 1;
@@ -23,7 +25,15 @@ function gradeCalc(){
          if (temp <= 0 | temp > 100) {
              validcounter++;
          }
-     }
+    }
+
+    var grayeds = document.getElementsByName("grayed");
+    var percys = document.getElementsByName("percy");
+
+    
+
+
+
     document.getElementById("get90").innerHTML = "";
     document.getElementById("theClass").innerHTML = "";
     document.getElementById("currentGrade").innerHTML = "";
@@ -64,6 +74,11 @@ function gradeCalc(){
         toget80 = (toget80/(.01*finalex));
         document.getElementById("get80").innerHTML = "You need to get a " + toget80 + " to get a 80";
     }
+
+    //test for grades in array
+
+    //document.getElementById("get83").innerHTML = grayeds[0].value*1;
+    //document.getElementById("get80").innerHTML = grayeds[1].value*1;
     
 
     //var test = document.getElementById("reloadButton");
