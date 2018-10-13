@@ -22,7 +22,7 @@ header * {
 
 .nav {
     overflow: hidden;
-    background-color: rgb(228, 190, 190);
+    background-color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
@@ -30,13 +30,13 @@ header * {
 .nav a{
     float: left;
     display: block;
-    color: #000000;
+    color: white;
     text-align: center;
     padding: 15px 80px;
 }
 
 .nav a:hover {
-    background-color: #ddd
+    background-color: rgb(106, 190, 223)
 }
 
 .nav a.active {
@@ -57,8 +57,15 @@ header * {
 }
 
 .footer {
+    background: black;
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    color: white;
+    font-size: 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 8px;
-    padding: 10px;
+
 }
