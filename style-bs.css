@@ -38,10 +38,10 @@ html, body {
 .image {
     opacity: 1;
     display: block;
-    width: 200%;
+    width: 50%;
     height: auto;
     position: center;
-    transition: .5s ease;
+    transition: .3s ease;
     backface-visibility: hidden;
 }
 
@@ -66,10 +66,10 @@ html, body {
 }
 
 .text {
-    background-color: #77dd77;
-    color: white;
+    background-color: pink;
+    color: black;
     font-size: 16px;
-    padding: 16px 32 px;
+    padding: 10px 20px;
 }
 
 footer {
