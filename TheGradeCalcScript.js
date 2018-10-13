@@ -3,22 +3,18 @@ function reload(){
 }
 function gradeCalc(){
 
-    //ideas for dealing with multiple classes
-
-    //have users input it like 100 20 30 20
-    //so that we can index through that string
-
+    var grades = [93, 90, 87, 83, 80, 77, 73, 70, 67, 63, 60];
 
     //obtaining information
     var className = document.getElementById("className").value; 
+    
+    //remove later
     var values = [];
     var g1 = document.getElementById("g1").value * 1;
     var g2 = document.getElementById("g2").value * 1;
     var p1 = document.getElementById("p1").value * 1;
     var p2 = document.getElementById("p2").value * 1;
     var finalex = document.getElementById("finalex").value * 1;
-
-    //checks to see if fields are 0 or over 100
     values.push(g1);
     values.push(g2);
     values.push(p1);
@@ -29,19 +25,28 @@ function gradeCalc(){
          if (temp <= 0 | temp > 100) {
              validcounter++;
          }
-     }
-
-     if(validcounter > 0) {
-        alert("Please Input Valid Values");
-        return;
     }
 
-    //resets output
+    var validcounter = 0;
+
+    var grayeds = document.getElementsByName("grayed");
+    var percys = document.getElementsByName("percy");
+
+    for(i = 0; i < grayeds.length; i++) {
+        if(grayeds[i].value == 0 || percys[i].value == 0) {
+            validcounter++;
+        }
+    }
+
     document.getElementById("get90").innerHTML = "";
     document.getElementById("theClass").innerHTML = "";
     document.getElementById("currentGrade").innerHTML = "";
 
-    //checks if class was given or not and prints based on that
+    if(validcounter > 0 || finalex > 100) {
+        alert("Please Input Valid Values");
+        return;
+    }
+
     if(className == "") {
         document.getElementById("theClass").innerHTML = "Information about your unspecified class:"
     }
@@ -49,13 +54,11 @@ function gradeCalc(){
         document.getElementById("theClass").innerHTML = "Information about your class, " + className + ":";
     }
     
-
-    //calculations 
     var finalGrade = ((g1*p1*.01) + (g2*p2*.01));
     var weights = (p1)+(p2); 
     finalGrade = (finalGrade/weights)*100;
     document.getElementById("currentGrade").innerHTML = "Your final current grade is: " + finalGrade;
-    if(finalex > 0 && finalex <=100) {
+    if(finalex > 0) {
         var existingScores = (g1*p1*.01) + (g2*p2*.01);
         var totalPercent = (p1+p2+finalex);
         var toget93 = ((93/100) * totalPercent) - existingScores;
@@ -70,11 +73,18 @@ function gradeCalc(){
         var toget83 = ((83/100) * totalPercent) - existingScores;
         toget83 = (toget83/(.01*finalex));
         document.getElementById("get83").innerHTML = "You need to get a " + toget83 + " to get a 83";
-        var toget80 = ((80/100) * totalPercent) - (existingScores;
+        var toget80 = ((80/100) * totalPercent) - existingScores;
         toget80 = (toget80/(.01*finalex));
         document.getElementById("get80").innerHTML = "You need to get a " + toget80 + " to get a 80";
     }
 
-    //shows the button
+    //test for grades in array
+
+    //document.getElementById("get83").innerHTML = grayeds[0].value*1;
+    //document.getElementById("get80").innerHTML = grayeds[1].value*1;
+    
+
+    //var test = document.getElementById("reloadButton");
+    //test.value = "Try another class!";
     document.getElementById("texttoshow").style.display = "inline";
 }
