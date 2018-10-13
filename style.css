@@ -6,9 +6,9 @@ body {
 header {
     text-align: center;
     padding: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-style: italic;
-    font-weight: bolder;
+    font-weight: 100;
     background:
     url(sunrisephoto.jpg) no-repeat center;
     height: 250px;
@@ -53,6 +53,7 @@ header * {
 
 .para {
     font-family: 'Roboto', sans-serif;
+    text-indent: 2em;
     font-weight: 100;
     padding: 10px 20px;
 }
