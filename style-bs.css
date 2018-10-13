@@ -11,6 +11,10 @@ input {
 	padding: none;
 }
 
+h2 {
+  margin-top: -50px;
+}
+
 h4 {
 	margin-left: 20px;
 	padding: none;
