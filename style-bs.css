@@ -36,9 +36,15 @@ table, th, td {
 	border: 1px solid black;
 }
 
-th, td {
+th {
 	position: relative;
-	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+td {
+	padding: 3.5em;
+
 }
 
 .navbar {
