@@ -6,6 +6,10 @@ html, body {
   color: #222;
 }
 
+input {
+	margin: auto;
+}
+
 .navbar {
   padding: 8px;
 }
