@@ -241,7 +241,25 @@ figure {
   height: 450px;
 }
 
+.header4 {
+  background:url(photos/photo4.jpg) no-repeat center;
+  height: 450px;
+}
 
+.gif_anxiety {
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  margin-top: -64.5px;
+  
+}
+
+/* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; */
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
