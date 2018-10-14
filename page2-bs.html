@@ -373,8 +373,20 @@
         
         
                             var total = a + b + c + d + e + f + g + h + i + j;
+                            if (total < 14) {
+                                text_add = "You currently aren't too stressed!"
+                            }
+                            else if (total < 27){
+                                text_add = "You are moderately stressed! Make sure to take your time to take a break!"
+                            }
+                            else {
+                                text_add = "You are really stressed! Make sure to take your time to take a break!"
+                            }
                             var text = "Your Perceived Stress Scale (PSS) is ";
-                            document.getElementById("x").innerHTML = text + total;
+                            document.getElementById("x").innerHTML = text + total +".";
+                            document.getElementById("y").innerHTML = text_add
+
+
                             }
                             
         
