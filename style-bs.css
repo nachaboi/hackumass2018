@@ -136,7 +136,9 @@ form {
   padding-bottom: 40px;
 }
 
-
+.para_grade input {
+  margin-left: 40px
+}
 
 /*--- Stress Calculator ---*/
 .a {
