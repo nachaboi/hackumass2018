@@ -14,7 +14,7 @@ function myFunction() {
         return;
     }
 
-    var intro = document.createTextNode("Exam/HW" + (big) + " Grade & Weight:\n");
+    var intro = document.createTextNode("Exam/HW" + (big + 1) + " Grade & Weight:\n");
     var breakitup = document.createElement("BREAK");
     document.getElementById("newgrades").appendChild(breakitup);
     document.getElementById("newgrades").appendChild(intro);
