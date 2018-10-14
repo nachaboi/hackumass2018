@@ -129,6 +129,10 @@ td {
   text-align: center;
 }
 
+.footer h6 {
+  padding-top: 14px;
+}
+
 
 form {
   padding-left: 2rem;
@@ -236,7 +240,6 @@ figure {
   background:url(photos/photo3.jpg) no-repeat center;
   height: 450px;
 }
-
 
 
 /*
