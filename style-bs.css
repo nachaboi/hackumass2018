@@ -118,12 +118,6 @@ td {
 
 
 /* --- Footer --- */
-footer {
-  background-color: #3f3f3f;
-  color: #d5d5d5;
-  width: 100%;
-  position: fixed;
-}
 
 .footer {
   position: fixed;
@@ -204,7 +198,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url(sunrisephoto.jpg);
+  background-image: url(photos/sunrisephoto.jpg);
   position: fixed;
   display: block;
   top: 0;
@@ -224,22 +218,22 @@ figure {
 
 /* -- Background Image -- */
 .header0 {
-  background:url(photo0.jpeg) no-repeat center;
+  background:url(photos/photo0.jpeg) no-repeat center;
   height: 450px;
 }
 
 .header1 {
-  background:url(photo1.jpeg) no-repeat center;
+  background:url(photos/photo1.jpeg) no-repeat center;
   height: 450px;
 }
 
 .header2 {
-  background:url(photo2.jpg) no-repeat center;
+  background:url(photos/photo2.jpg) no-repeat center;
   height: 450px;
 }
 
 .header3 {
-  background:url(photo3.jpg) no-repeat center;
+  background:url(photos/photo3.jpg) no-repeat center;
   height: 450px;
 }
 
