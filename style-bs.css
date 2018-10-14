@@ -117,12 +117,24 @@ td {
 }
 
 
+/* --- Footer --- */
 footer {
   background-color: #3f3f3f;
   color: #d5d5d5;
-  padding-top: 1px;
-  height: 7%
+  width: 100%;
+  position: fixed;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  text-align: center;
+}
+
 
 form {
   padding-left: 2rem;
