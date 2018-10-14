@@ -13,9 +13,14 @@ function myFunction() {
     if(size1 != size2) {
         return;
     }
-
-    var breakitup = document.createElement("br");
-    document.getElementById("newgrades").appendChild(breakitup);
+    //making enters after the third line
+    if(big+1 > 3) {
+        var breakitup = document.createElement("br");
+        document.getElementById("newgrades").appendChild(breakitup);
+        var breakitup = document.createElement("br");
+        document.getElementById("newgrades").appendChild(breakitup);
+    }
+    //
     var intro = document.createTextNode("Exam/HW" + (big + 1) + " Grade & Weight:\n");
     document.getElementById("newgrades").appendChild(intro);
     var danewgrade = document.createElement("INPUT");
