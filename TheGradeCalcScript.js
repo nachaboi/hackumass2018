@@ -14,9 +14,9 @@ function myFunction() {
         return;
     }
 
-    var intro = document.createTextNode("Exam/HW" + (big + 1) + " Grade & Weight:\n");
-    var breakitup = document.createElement("BREAK");
+    var breakitup = document.createElement("br");
     document.getElementById("newgrades").appendChild(breakitup);
+    var intro = document.createTextNode("Exam/HW" + (big + 1) + " Grade & Weight:\n");
     document.getElementById("newgrades").appendChild(intro);
     var danewgrade = document.createElement("INPUT");
     danewgrade.setAttribute("name", "grayed");
@@ -92,7 +92,14 @@ function gradeCalc(){
         for(i = 0; i < grades.length; i++) {
             var temp = (grades[i] * .01 * totalPercent) - existingScores;
             temp = (temp/(.01*finalex));
-            document.getElementById("get" + grades[i]).innerHTML = "You need to get a " + Number.parseFloat(temp).toFixed(2) + "% to get a " + grades[i] + "% (" + letterGrades[i] + ").";
+            var toPrint = Number.parseFloat(temp).toFixed(2);
+            if(toPrint <= 0) {
+                document.getElementById("get" + grades[i]).innerHTML = "You are guaranteed a " + grades[i] + "% (" + letterGrades[i] + ").";
+            }
+            else {
+                document.getElementById("get" + grades[i]).innerHTML = "You need to get a " + toPrint + "% to get a " + grades[i] + "% (" + letterGrades[i] + ").";
+            }
+            
         }
     }
     document.getElementById("texttoshow").style.display = "inline";
