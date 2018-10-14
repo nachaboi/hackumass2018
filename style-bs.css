@@ -29,7 +29,7 @@ p {
 button {
 	margin-left: 20px;
 	margin-bottom: 20px;
-	padding: none;
+	
 }
 
 table, th, td {
@@ -128,6 +128,16 @@ form {
   padding-left: 2rem;
 }
 
+/*--- Grade Calculator ---*/
+.para_grade {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: -80px;
+  padding-bottom: 40px;
+}
+
+
+
 /*--- Stress Calculator ---*/
 .a {
   font-size: 20px;
@@ -141,7 +151,7 @@ form {
 }
 
 .button {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 /*---Media Queries --*/
