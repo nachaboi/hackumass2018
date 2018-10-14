@@ -1,11 +1,38 @@
 function reload(){
     location.reload();
 }
-function newField(){
-    var x = document.createElement("paragraph");
-    x.setAttribute("value", "hi");
-    document.body.appendChild(x);
+
+function myFunction() {
+
+    var size1 = document.getElementsByName("grayed").length;
+    var size2 = document.getElementsByName("percy").length;
+    var big = size1;
+    if(size2 > size1) {
+        big = size2;
+    }
+    if(size1 != size2) {
+        return;
+    }
+
+    var intro = document.createTextNode("Exam/HW" + (big) + " Grade & Weight:\n");
+    var breakitup = document.createElement("BREAK");
+    document.getElementById("newgrades").appendChild(breakitup);
+    document.getElementById("newgrades").appendChild(intro);
+    var danewgrade = document.createElement("INPUT");
+    danewgrade.setAttribute("name", "grayed");
+    document.getElementById("newgrades").appendChild(danewgrade);
+    var conjunction = document.createTextNode(" % & ");
+    document.getElementById("newgrades").appendChild(conjunction);
+    var danewpercent = document.createElement("INPUT");
+    danewpercent.setAttribute("name", "percy");
+    document.getElementById("newgrades").appendChild(danewpercent);
+    var ender = document.createTextNode(" %");
+    document.getElementById("newgrades").appendChild(ender);
+
+
+     
 }
+
 function gradeCalc(){
 
     var grades = [93, 90, 87, 83, 80, 77, 73, 70, 67, 63, 60];
