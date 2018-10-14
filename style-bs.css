@@ -81,9 +81,10 @@ td {
     display: block;
     width: 100%;
     height: auto;
-    position: center;
+    position: relative;
     transition: .5s ease;
     backface-visibility: hidden;
+
 }
 
 .middle {
@@ -93,8 +94,7 @@ td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform:
-    translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -106,10 +106,10 @@ td {
     opacity: 1;
 }
 
-.middle:hover .text {
-    background-color: pink;
+.text {
+    background-color: yellow;
     color: black;
-    font-family: 'Comic Sans MS', sans-serif; 
+    /*font-family: 'Comic Sans MS', sans-serif; */
     font-size: 16px;
     padding: 10px 20px;
 }
